@@ -327,6 +327,9 @@ a {
   margin: 0;
   font-size: 0.8rem;
   opacity: 0.5;
+  overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .footer-panel1{
