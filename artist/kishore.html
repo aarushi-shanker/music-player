@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player Clone: Music for everyone</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="top-icons">
+            <div class="link-flex">
+                <img src="./assets/logo.png" alt="Spotify"/>
+                <a href="#">Spotify</a>
+            </div>
+          <div class="link-flex">
+            <img src="./assets/home.png" alt="Home" />
+            <a href="index.html">Home</a>
+          </div>
+          <div class="link-flex">
+            <a href="#search"><img src="./assets/search.png" alt="Search" /></a>
+            <a href="#search">Search</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="flex-top">
+            <div class="link-flex">
+              <img src="./assets/playlist.png" alt="Library" />
+              <p>Your Library</p>
+            </div>
+            <div class="link-flex">
+              <img src="./assets/plus.png" />
+              <img src="./assets/boxes.png" />
+            </div>
+          </div>
+          <div class="link-flex" style="gap: 0.5rem">
+            <div class="chip">Playlist</div>
+            <div class="chip">Artists</div>
+            <div class="chip">Recommended</div>
+          </div>
+          <div class="flex-top">
+            <img src="./assets/search.png" />
+            <p>Recents</p>
+          </div>
+          <div class="albums">
+            <div class="link-flex album-flex">
+              <img src="./assets/mp16.webp" class="album-cover" />
+              <div class="col-flex">
+                <p class="album-name">Tere Liye</p>
+                <p class="card-description">Lata &#x2022; Spotify</p>
+              </div>
+               <div class="play" id="play-col"><i class="fa-solid fa-play" id="16"></i></div>
+            </div>
+            <div class="link-flex album-flex">
+              <img src="./assets/mp17.webp" class="album-cover" />
+              <div class="col-flex">
+                <p class="album-name">Tera Sath Hai</p>
+                <p class="card-description">Lata &#x2022; Spotify</p>
+              </div>
+               <div class="play" id="play-col"><i class="fa-solid fa-play" id="17"></i></div>
+            </div>
+            <div class="link-flex album-flex">
+              <img src="./assets/mp18.webp" class="album-cover" />
+              <div class="col-flex">
+                <p class="album-name">Kora Kagaaz</p>
+                <p class="card-description">Kishore Kumar &#x2022; Spotify</p>
+              </div>
+               <div class="play" id="play-col"><i class="fa-solid fa-play" id="18"></i></div>
+            </div>
+            <div class="link-flex album-flex">
+              <img src="./assets/mp19.jpg" class="album-cover" />
+              <div class="col-flex">
+                <p class="album-name">Dope Shope</p>
+                <p class="card-description">Honey Singh &#x2022; Spotify</p>
+              </div>
+               <div class="play" id="play-col"><i class="fa-solid fa-play" id="19"></i></div>
+            </div>
+            <div class="link-flex album-flex">
+              <img src="./assets/mp20.webp" class="album-cover" />
+              <div class="col-flex">
+                <p class="album-name">Blue Eyes</p>
+                <p class="card-description">Honey Singh &#x2022; Spotify</p>
+              </div>
+               <div class="play" id="play-col"><i class="fa-solid fa-play" id="20"></i></div>
+            </div>
+            <div class="link-flex album-flex">
+              <img src="./assets/mp6.webp" class="album-cover" />
+              <div class="col-flex">
+                <p class="album-name">Blank Space</p>
+                <p class="card-description">Taylor Swift &#x2022; Spotify</p>
+              </div>
+               <div class="play" id="play-col"><i class="fa-solid fa-play" id="6"></i></div>
+            </div>
+            <div class="link-flex album-flex">
+              <img src="./assets/mp7.webp" class="album-cover" />
+              <div class="col-flex">
+                <p class="album-name">Hips Don't Lie</p>
+                <p class="card-description">Shakira &#x2022; Spotify</p>
+              </div>
+               <div class="play" id="play-col"><i class="fa-solid fa-play" id="7"></i></div>
+            </div>
+            <div class="link-flex album-flex">
+              <img src="./assets/mp8.jpg" class="album-cover" />
+              <div class="col-flex">
+                <p class="album-name">Love Story</p>
+                <p class="card-description">Taylor Swift &#x2022; Spotify</p>
+              </div>
+               <div class="play" id="play-col"><i class="fa-solid fa-play" id="8"></i></div>
+            </div>
+            <div class="link-flex album-flex">
+              <img src="./assets/mp9.webp" class="album-cover" />
+              <div class="col-flex">
+                <p class="album-name">Whenever,Wherever</p>
+                <p class="card-description">Shakira &#x2022; Spotify</p>
+              </div>
+               <div class="play" id="play-col"><i class="fa-solid fa-play" id="9"></i></div>
+            </div>
+            <div class="link-flex album-flex">
+              <img src="./assets/mp1.webp" class="album-cover" />
+              <div class="col-flex">
+                <p class="album-name">Tere Hawale</p>
+                <p class="card-description">Arijit Singh &#x2022; Spotify</p>
+              </div>
+               <div class="play" id="play-col"><i class="fa-solid fa-play" id="1"></i></div>
+            </div>
+            <div class="link-flex album-flex">
+              <img src="./assets/mp2.jpg" class="album-cover" />
+              <div class="col-flex">
+                <p class="album-name">Suno na Sangemarmar</p>
+                <p class="card-description">Arijit Singh &#x2022; Spotify</p>
+              </div>
+               <div class="play" id="play-col"><i class="fa-solid fa-play" id="2"></i></div>
+            </div>
+            <div class="link-flex album-flex">
+              <img src="./assets/mp3.jpg" class="album-cover" />
+              <div class="col-flex">
+                <p class="album-name">Chand Sifarish</p>
+                <p class="card-description">Sonu Nigam &#x2022; Spotify</p>
+              </div>
+               <div class="play" id="play-col"><i class="fa-solid fa-play" id="3"></i></div>
+            </div>
+            <div class="link-flex album-flex">
+              <img src="./assets/mp4.webp" class="album-cover" />
+              <div class="col-flex">
+                <p class="album-name">Ram Siya Ram</p>
+                <p class="card-description">Sachet &#x2022; Spotify</p>
+              </div>
+               <div class="play" id="play-col"><i class="fa-solid fa-play" id="4"></i></div>
+            </div>
+            <div class="link-flex album-flex">
+              <img src="./assets/mp5.jpg" class="album-cover" />
+              <div class="col-flex">
+                <p class="album-name">Kaise Mujhe</p>
+                <p class="card-description">Shreya Ghosal &#x2022; Spotify</p>
+              </div>
+               <div class="play" id="play-col"><i class="fa-solid fa-play" id="5"></i></div>
+            </div>
+            <div class="link-flex album-flex">
+              <img src="./assets/mp15.jpg" class="album-cover" />
+              <div class="col-flex">
+                <p class="album-name">Lag Jaa Gale</p>
+                <p class="card-description">Lata &#x2022; Spotify</p>
+              </div>
+               <div class="play" id="play-col"><i class="fa-solid fa-play" id="15"></i></div>
+            </div>
+          </div>
+           
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="navbar">
+          
+          <div class="left-nav">
+            <div class="link-flex">
+              <img src="./assets/back_navigation.png" />
+              <img src="./assets/forward_navigation.png" />
+            </div>
+            <div class="search-box" >
+                <div class="link-flex">
+                <img style="width:0.85rem; height:0.85rem;" src="./assets/search.png" />
+                <input 
+                    id="search"
+                    type="text" 
+                    class="search"
+                    style="color:white;"
+                    placeholder="What do you want to listen to?"
+                />
+                </div>
+                <div class="result">
+                  <!--<a href="" class="box">
+                        <img src="./assets/mp1.webp"/>
+                        <div class="cont">
+                            Tere Hawale
+                            <div class="subtitle">Arijit Singh</div>
+                        </div>
+                    </a>-->
+                </div>
+            </div>
+           </div>  
+           
+          <div class="link-flex" style="gap: 0; column-gap: 0.5rem">
+            <div class="chip">Explore Premium</div>
+            <div class="chip">Install App</div>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-regular fa-user"></i>
+          </div>
+        </div>
+
+        <div class="link-flex menu">
+          <h5 class="chip">All</h5>
+          <h5 class="chip active">Artists</h5>
+            <h5 class="chip">Radio</h5>
+          </div>
+          <div class="song-side">
+            <img src="./assets/kishore-bg.png"/>
+            <div class="play-bar ">
+                <h2>Kishore Kumar</h2>
+                <div class="index">
+                  <h3 style="color: #ababab;">Artist</h3>
+                <i style="color:rgb(35, 170, 41)" class="fa-solid fa-4x fa-circle-play" id="playerPlay"></i>
+                </div>
+            </div>
+        </div>
+        <h2>Recommended for Today</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./assets/mp10.jpg" class="card-img" />
+             <div class="play" id="play-col"><i class="fa-solid fa-play" id="10"></i></div>
+            <p class="card-name">Mere Sapno ki Rani</p>
+            <p class="card-description">Kishore Kumar &#x2022; Spotify</p>
+          </div>
+          <div class="card">
+            <img src="./assets/mp11.jpeg" class="card-img" />
+             <div class="play" id="play-col"><i class="fa-solid fa-play" id="11"></i></div>
+            <p class="card-name">Yahan Wahan</p>
+            <p class="card-description">Kishore Kumar &#x2022; Spotify</p>
+          </div>
+          <div class="card">
+            <img src="./assets/mp12.jpg" class="card-img" />
+             <div class="play" id="play-col"><i class="fa-solid fa-play" id="12"></i></div>
+            <p class="card-name">Pal Pal Dil ke Pass</p>
+            <p class="card-description">Kishore Kumar &#x2022; Spotify</p>
+            
+          </div>
+          <div class="card">
+            <img src="./assets/mp13.jpg" class="card-img" />
+             <div class="play" id="play-col"><i class="fa-solid fa-play" id="13"></i></div>
+            <p class="card-name">JIska Mujhe Tha</p>
+            <p class="card-description">Kishore Kumar &#x2022; Spotify</p>
+          </div>
+          <div class="card">
+            <img src="./assets/mp14.jpg" class="card-img" />
+             <div class="play" id="play-col"><i class="fa-solid fa-play" id="14"></i></div>
+            <p class="card-name">Raat Kali Ek Khwab</p>
+            <p class="card-description">Kishore Kumar &#x2022; Spotify</p>
+          </div>
+        </div>
+        <a href="artist.html">
+          <h2>Suggested Artists</h2>
+        </a>
+        <div class="cards-container artist">
+          <div class="card">
+            <a href="shanker.html">
+            <img src="./assets/shanker.jpg" class="card-img" />
+            </a>
+            <p class="card-name">Shanker Jai Kishan</p>
+            <p class="card-description">Artist</p>
+          </div>
+          <div class="card">
+            <a href="kishore.html">
+            <img src="./assets/kishore.webp" class="card-img" />
+            </a>
+            <p class="card-name">Kishore Kumar</p>
+            <p class="card-description">Artist</p>
+          </div>
+          <div class="card">
+            <a href="lata.html">
+            <img src="./assets/lata.jpg" class="card-img" />
+            </a>
+            <p class="card-name">Lata Mangeshkar</p>
+            <p class="card-description">Artist</p>
+          </div>
+          <div class="card">
+            <a href="arijit.html">
+            <img src="./assets/arijit.webp" class="card-img" />
+            </a>
+            <p class="card-name">Arijit Singh</p>
+            <p class="card-description">Artist</p>
+          </div>
+          <div class="card">
+            <a href="shakira.html">
+            <img src="./assets/shakira.webp" class="card-img" />
+            </a>
+            <p class="card-name">Shakira</p>
+            <p class="card-description">Artist</p>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer-panel1">
+            <ul>
+              <h4>Company</h4>
+              <a>About</a>
+              <a>Jobs</a>
+              <a>For the Record</a>
+            </ul>  
+            <ul>
+              <h4>Communities</h4>
+              <a>For Artists</a>
+              <a>Developers</a>
+              <a>Advertising</a>
+              <a>Investors</a>
+              <a>Vendors</a>
+            </ul> 
+            <ul>
+              <h4>Useful Links</h4>
+              <a>Support</a>
+              <a>Free Mobile App</a>
+            </ul> 
+            <div class="icons">
+              <div class="card">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="card">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="card">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+            </div>
+          </div>
+          <div class="footer-panel2">
+              <div class="pan-left">
+                  <p><span>Legal</span><span>Privacy Center</span><span>Privacy Policy</span><span>Cookies</span><span>About Ads</span><span>Accessibility</span></p>
+              </div>
+              <div class="pan-right">
+                  <p>&#169 2024 Spotify AB</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="player">
+        <div class="master-play">
+            <div class="wave" id="wave">
+              <div class="waveform"></div>
+              <div class="waveform"></div>
+              <div class="waveform"></div>
+              <div class="waveform"></div>
+              <div class="waveform"></div>
+            </div>
+            <div class="poster">
+                <img src="./assets/kishore.webp" id="masterPoster"/>
+             <h5 id="title">Kishore Kumar<br>
+                <div class="subtitle">Artist</div>
+              </h5>
+            </div>
+          </div>
+          <div class="player-center">
+            <div class="player-controls">
+              <img
+                style="height: 10px; margin-right: 1rem; opacity: 0.8"
+                src="./assets/shuffle.png"
+              />
+              <i style="margin-right: 15px" class="fa-solid fa-backward-step" id="previous"></i>
+              <i style="margin-right: 15px" class="fa-solid fa-circle-play" id="masterPlay"></i>
+              <i style="margin-right: 15px" class="fa-solid fa-forward-step" id="next"></i>
+              <img
+                style="height: 10px; margin-right: 1rem; opacity: 0.8"
+                src="./assets/loop.png"
+              />
+            </div>
+            <div class="player-timeline">
+              <span id="current-time">0:00</span>
+              <div class="timebar">
+              <input  
+                type="range"
+                id="timeline"
+                min="0"
+                max="100"
+                set="1"
+                value="0"
+              />
+              <div class="bar" id="bar"></div>
+                  <div class="dot"></div>
+              </div>
+              <span id="total-time">0:00</span>
+            </div>
+          </div>
+  
+          <div class="volume-controls">
+            <img
+              src="./assets/device.png"
+              style="height: 1rem; margin-right: 1rem; opacity: 0.8"
+              alt="Volume"
+            />
+            <img
+              src="./assets/playlist.png"
+              style="height: 1rem; margin-right: 1rem; opacity: 0.8"
+              alt="Settings"
+            />
+            <img
+              src="./assets/music.png"
+              style="height: 1rem; margin-right: 1rem; opacity: 0.8"
+              alt="Fullscreen"
+            />
+          <div id="vol">
+            <i class="fa-solid fa-volume-high" id="vol-icon"></i>
+            <input
+              type="range"
+              id="volumeline"
+              min="0"
+              max="100"
+              step="1"
+              value="50"
+            />
+        </div>  
+        </div>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/62ae7ab814.js" crossorigin="anonymous"></script>
+    <script src="kishore.js"></script>
+  </body>
+</html>
